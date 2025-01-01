@@ -1,0 +1,5 @@
+grpcio~=1.68.1
+fastapi~=0.115.6
+protobuf~=5.29.2
+pydantic~=2.10.4
+uvicorn~=0.34.0

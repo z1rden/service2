@@ -1,0 +1,22 @@
+1. Запустить клиента
+python -m blueprint.client
+
+2. Взаимодействие с fastapi происходит путем бомбежки json с помощью postman
+Для взаимодействия с ручкой "Добавить пользователя":
+{
+    "name": "Artem",
+    "surname": "Kulagin",
+    "email": "artemkulagin@yandex.ru",
+    "login": "artemkulagin",
+    "hash_password": "aaa"
+}
+--||-- с ручкой "Удалить пользователя":
+{
+    "id": 1
+}
+--||-- с ручкой "Удалить пользователя":
+{
+    "id": 1,
+    "parameter": "hash_password",
+    "value": "aaa"
+}
